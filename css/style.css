@@ -1,0 +1,94 @@
+.landing{
+  background-image: url("/images/landingbg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.landing li{
+  text-decoration: none;
+}
+.nav-item{
+  text-decoration: none;
+  display: inline-block;
+}
+.nav-link{
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Montserrat';
+  font-size: 13px;
+}
+.active{
+  color: #ffd800;
+}
+.active:hover{
+    color: #ffd800;
+}
+.nav-link:hover:not(.active){
+  color: #fc0056;
+  transition: color 0.3s ease-in;
+}
+.nav-brand{
+  color: white;
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-size: 38px;
+  text-transform: uppercase;
+
+}
+.spacer120px{
+  height: 120px;
+}
+.hero{
+  color: white;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 42px;
+}
+.main-text{
+  color: white;
+  margin:0px 450px;
+  font-family: 'Slabo 13px'
+}
+.join-btn{
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #fc0056;
+  color: white;
+  border-radius: 0px;
+}
+.join-btn:hover{
+    background-color: #F73859;
+    transition: 0.3s ease-in;
+}
+.more-btn{
+  margin-top: 20px;
+  padding: 7px 15px;
+  font-size: 13px;
+  background-color: Transparent;
+  color: white;
+  border-radius: 0px;
+  border: 1px solid white;
+}
+.more-btn:hover{
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in;
+}
+.footer{
+  position: fixed;
+  bottom:30px;
+}
+.footer a{
+  padding: 10px;
+  color: white;
+  font-size: 10px;
+  background-color: #fc0056;
+}
+.footer a:hover{
+  background-color: #FFD800;
+  color: #fc0056;
+}
