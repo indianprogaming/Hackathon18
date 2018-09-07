@@ -92,3 +92,53 @@
   background-color: #FFD800;
   color: #fc0056;
 }
+.form form{
+  font-family: 'Slabo 13px';
+}
+.form input{
+  border: 1px solid #fc0056;
+  color:white;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background-color: #232528;
+  margin: 10px ;
+}
+.form input:focus{
+  border-radius: 30px;
+  padding: 5px 20px;
+  background-color: #232528;
+  color: #FFD800;
+  margin: 10px ;
+  border: 1px solid #FFD800;
+  box-shadow: 0 1px 1px rgba(255, 216, 0, 0.075) inset, 0 0 16px rgba(255, 216, 0, 0.6);
+}
+.signup-text{
+  color:white;
+  text-align: center;
+  font-family: Montserrat;
+}
+.form p{
+  display: inline;
+}
+.st{
+  font-size: 30px;
+}
+.submit-btn{
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #fc0056;
+  color: white;
+  border-radius: 20px;
+}
+.submit-btn:hover{
+    background-color: #F73859;
+    transition: 0.3s ease-in;
+}
+
+.alr{
+  font-family: Montserrat;
+  font-size: 13px;
+}
+.alr a{
+  color:#fc0056;
+}
