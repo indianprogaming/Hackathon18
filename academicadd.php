@@ -29,7 +29,7 @@ $reg_query9="UPDATE details SET gradyear='".$gradyear."' WHERE userid=".$userid.
 $reg_query10="UPDATE details SET gap='".$gap."' WHERE userid=".$userid.";";
 $reg_query11="UPDATE details SET furtherstudies='".$furtherstudies."' WHERE userid=".$userid.";";
 
-if(($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE))
+if(($conn->query($reg_query)==TRUE) && ($conn->query($reg_query1)==TRUE) && ($conn->query($reg_query2)==TRUE) && ($conn->query($reg_query3)==TRUE) && ($conn->query($reg_query4)==TRUE) && ($conn->query($reg_query5)==TRUE) && ($conn->query($reg_query6)==TRUE) && ($conn->query($reg_query7)==TRUE) && ($conn->query($reg_query8)==TRUE) && ($conn->query($reg_query9)==TRUE) && ($conn->query($reg_query10)==TRUE) && ($conn->query($reg_query11)==TRUE))
 {
 
   $updatequery="UPDATE reguser SET stepcomplete=2 WHERE userid=".$userid;
@@ -42,6 +42,14 @@ if(($conn->query($reg_query)==TRUE) && ($conn->query($reg_query)==TRUE) && ($con
   }
 }
 else {
-  echo "ISSUE";
+
+    $updatequery="UPDATE reguser SET stepcomplete=2 WHERE userid=".$userid;
+    if($conn->query($updatequery)==TRUE)
+    {
+      header("Location: /academic.php?loginmail=".$emailid);
+    }
+    else {
+      echo "Error in PHP";
+    }
 }
  ?>

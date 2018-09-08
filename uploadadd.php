@@ -47,17 +47,17 @@ $thumbimpression = $_FILES["thumbimpression"]["tmp_name"];
 
     if (TRUE) {
 
-      $reg_query="UPDATE details SET photo='".$target_file1."' WHERE userid=".$userid.";";
-      $reg_query1="UPDATE details SET aadharpic='".$target_file5."' WHERE userid=".$userid.";";
-      $reg_query2="UPDATE details SET 10markpic='".$target_file2."' WHERE userid=".$userid.";";
-      $reg_query3="UPDATE details SET 12markpic='".$target_file3."' WHERE userid=".$userid.";";
-      $reg_query4="UPDATE details SET 12passing='".$target_file4."' WHERE userid=".$userid.";";
-      $reg_query5="UPDATE details SET gradpassing='".$target_file6."' WHERE userid=".$userid.";";
-      $reg_query6="UPDATE details SET provisional='".$target_file7."' WHERE userid=".$userid.";";
-      $reg_query7="UPDATE details SET postgraduation='".$target_file8."' WHERE userid=".$userid.";";
-      $reg_query8="UPDATE details SET passport='".$target_file9."' WHERE userid=".$userid.";";
-      $reg_query9="UPDATE details SET signpic='".$target_file10."' WHERE userid=".$userid.";";
-      $reg_query10="UPDATE details SET thumbpic='".$target_file11."' WHERE userid=".$userid.";";
+      $reg_query="UPDATE details SET photo='/".$target_file1."' WHERE userid=".$userid.";";
+      $reg_query1="UPDATE details SET aadharpic='/".$target_file5."' WHERE userid=".$userid.";";
+      $reg_query2="UPDATE details SET 10markpic='/".$target_file2."' WHERE userid=".$userid.";";
+      $reg_query3="UPDATE details SET 12markpic='/".$target_file3."' WHERE userid=".$userid.";";
+      $reg_query4="UPDATE details SET 12passing='/".$target_file4."' WHERE userid=".$userid.";";
+      $reg_query5="UPDATE details SET gradpassing='/".$target_file6."' WHERE userid=".$userid.";";
+      $reg_query6="UPDATE details SET provisional='/".$target_file7."' WHERE userid=".$userid.";";
+      $reg_query7="UPDATE details SET postgraduation='/".$target_file8."' WHERE userid=".$userid.";";
+      $reg_query8="UPDATE details SET passport='/".$target_file9."' WHERE userid=".$userid.";";
+      $reg_query9="UPDATE details SET signpic='/".$target_file10."' WHERE userid=".$userid.";";
+      $reg_query10="UPDATE details SET thumbpic='/".$target_file11."' WHERE userid=".$userid.";";
 
       if(($conn->query($reg_query)==TRUE) && ($conn->query($reg_query1)==TRUE) && ($conn->query($reg_query2)==TRUE) && ($conn->query($reg_query3)==TRUE) && ($conn->query($reg_query4)==TRUE) && ($conn->query($reg_query5)==TRUE) && ($conn->query($reg_query6)==TRUE) && ($conn->query($reg_query7)==TRUE) && ($conn->query($reg_query8)==TRUE) && ($conn->query($reg_query9)==TRUE) && ($conn->query($reg_query10)==TRUE))
       {
@@ -65,7 +65,14 @@ $thumbimpression = $_FILES["thumbimpression"]["tmp_name"];
         $updatequery="UPDATE reguser SET stepcomplete=3 WHERE userid=".$userid;
         if($conn->query($updatequery)==TRUE)
         {
-          echo "FInal SUCCESS";
+          $updatequery="UPDATE reguser SET stepcomplete=3 WHERE userid=".$userid;
+          if($conn->query($updatequery)==TRUE)
+          {
+            header("Location: /userpage.php?loginmail=".$emailid);
+          }
+          else {
+            echo "Error in PHP";
+          }
         }
         else {
           echo "Error in PHP";

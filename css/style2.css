@@ -69,3 +69,23 @@ margin-left: 110px;
   background-color: #F73859;
   transition: 0.3s ease-in;
 }
+.profile{
+  margin-top: 30px;
+}
+.profile li{
+  display: block;
+  padding: 7px;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+.userphoto{
+  height: 300px;
+  width: 220px;
+  margin-right: 150px;
+}
+.signphoto{
+  width: 220px;
+  height: 80px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
