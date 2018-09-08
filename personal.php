@@ -66,7 +66,7 @@ if ($stepcomplete==0) {
               <label for="aadhar">Aadhar Card Number*</label>
               <input type="text" name="aadhar" required="required" value="">
               <label for="emailid">Email ID*</label>
-              <input type="text" name="emailid" required="required" value="">
+              <input type="text" name="emailid" required="required" value="<?php echo $loginmail ?>">
               <label for="mobile">Mobile Number*</label>
               <input type="text" name="mobile" required="required" value="">
               <input type="text" name="userid" value="<?php echo $id;?>" style="visibility:hidden;">
