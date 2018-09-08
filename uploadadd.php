@@ -21,7 +21,7 @@ $target_file6 = $target_dir .$userid. basename($_FILES["signature"]["name"]);
 $target_file7 = $target_dir .$userid. basename($_FILES["gradmarksheet"]["name"]);
 $target_file8 = $target_dir .$userid. basename($_FILES["provisional"]["name"]);
 $target_file9 = $target_dir .$userid. basename($_FILES["postgradmarksheet"]["name"]);
-$target_file10 = $target_dir .$userid. basename($_FILES["passport"]["name"]);
+$target_file10 = $target_dir .$userid. basename($_FILES["signature"]["name"]);
 $target_file11 = $target_dir .$userid. basename($_FILES["thumbimpression"]["name"]);
 
 //FILES NAME

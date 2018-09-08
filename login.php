@@ -13,9 +13,14 @@ if ($loginmail!="novalue") {
     while ($row=$result->fetch_assoc()) {
       if (strtolower($loginmail)==strtolower($row["email"]))
         if (($cryptpass==$row['password'])) {
-          $id=$row["userid"];
-          $stepcomplete=$row["stepcomplete"];
-          break;
+          if ($row['verified']==1) {
+            $id=$row["userid"];
+            $stepcomplete=$row["stepcomplete"];
+            break;
+          }
+          else {
+            echo "You haven't Verified your Email ID yet Please Verify it and Try Again";
+          }
         }
         else {
           echo "Wrong username or Password";

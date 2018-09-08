@@ -15,7 +15,7 @@ else {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>InfoSeed : Seeding Info Digitally</title>
+    <title>CLIENT : OUR CLIENT PAGE</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Slabo+13px" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
@@ -28,23 +28,14 @@ else {
         <div class="row nav-row">
           <div class="col-md-4">
             <div class="nav-brand font-weight-light">
-              InfoSeed
+              CLIENT 1
             </div>
-          </div>
-          <div class="col-md-8">
-            <ul>
-              <li class="nav-item"><a href="index.html" class="nav-link ">HOME</a></li>
-              <li class="nav-item"><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
-              <li class="nav-item"><a href="contactus.html" class="nav-link">CONTACT US</a></li>
-              <li class="nav-item"><a href="signup.php" class="nav-link">SIGN UP</a></li>
-              <li class="nav-item"><a href="loginpage.php" class="nav-link active">LOGIN</a></li>
-            </ul>
           </div>
         </div>
       </div>|
       <div class="spacer120px">
         <br>
-        <h3 class="signup-text">Enter Your Login Details</h1>
+        <h3 class="signup-text">Enter Your Infoseed Seeding Details</h1>
           <?php
 					if ($reg_suc=="TRUE") {
 						// code...
@@ -110,7 +101,7 @@ else {
           <br>
           <p class="text-white alr">Don't have an Account? Register <a href="signup.php">Here</a></p>
 					<br><br>
-        <!--  <p class="text-white alr">Can't Sign in? <a href="forgot.php">Forgot password</a></p>-->
+        <!--  <p class="text-white alr">Can't Sign in? <a href="forgot.php">Forgot password</a></p> -->
         </form>
       </div>
       <div class="footer">
