@@ -48,7 +48,7 @@ if ($stepcomplete==1) {
         </ul>
       </div>
       <div class="form">
-        <form class="realform" action="personal.php" method="post">
+        <form class="realform" action="academicadd.php" method="post">
           <div class="row">
             <div class="col-md-4">
               <label for="10thper">X Percentage*</label>
@@ -100,7 +100,10 @@ if ($stepcomplete==1) {
               <label for="gradyear">Gradution Year</label>
               <input class="" type="text" name="gradyear" value="">
               <label for="furtherstudies">Describe Any Further Studies</label>
+
               <input class="" type="text" name="furtherstudies" value="">
+              <input type="text" name="userid" value="<?php echo $id;?>" style="visibility:hidden;">
+              <input type="text" name="emailid" value="<?php echo $loginmail;?>" style="visibility:hidden;">
             </div>
             <div class="col-md-4">
               <button type="submit" class="btn btn-save">Save and Next</button>

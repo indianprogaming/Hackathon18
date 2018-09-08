@@ -48,7 +48,7 @@ if ($stepcomplete==2) {
         </ul>
       </div>
       <div class="form">
-        <form class="realform" action="personal.php" method="post">
+        <form class="realform" action="uploadadd.php" method="post" enctype="multipart/form-data">
           <div class="row">
             <div class="col-md-4">
               <label for="photo">User's Photograph*</label>
@@ -84,10 +84,12 @@ if ($stepcomplete==2) {
               <label for="passport">Passport</label>
               <input type="file" name="passport" id="photo" accept=".jpg, .jpeg, .png">
 
-              <label for="passport">Thumb Impression*</label>
-              <input type="file" required=require name="passport" id="photo" accept=".jpg, .jpeg, .png">
+              <label for="thumbimpression">Thumb Impression*</label>
+              <input type="file" required=require name="thumbimpression" id="photo" accept=".jpg, .jpeg, .png">
 
               <button type="submit" class="btn btn-save" name="button">Submit Details</button>
+              <input type="text" name="userid" value="<?php echo $id;?>" style="visibility:hidden;">
+              <input type="text" name="emailid" value="<?php echo $loginmail;?>" style="visibility:hidden;">
             </div>
             <div class="col-md-4"></div>
           </div>
